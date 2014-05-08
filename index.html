@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/calculate.js"></script>
+    <title>Hey Money</title>
+</head>
+
+<body>
+    <div data-role="panel" id="mypanel">
+        <!-- panel content goes here -->
+    </div>
+
+    <div data-role="header" data-position="fixed" class="header">
+        <h1 class="title-font">Hey Money</h1>
+    </div>
+    <!-- <a href="record.html" class="swipe" data-transition="flip" style="display:none" data-ajax="false"></a> -->
+
+    <div class="content">
+        <div class="today-report">
+            <span class="title3-font">今日账单(元)</span>
+            <br>
+            <span class="content-font display1">0</span>
+            <span class="real-font display2">
+                <span>
+        </div>
+        <div id="container" class="ui-responsive">
+
+        </div>
+    </div>
+    <div class="footer swipe-area">
+        <div class="panel">
+            <div class="line">
+                <div class="line-row">
+
+                    <div class="keyboard-num4 num" value="1">
+                        1
+                    </div>
+                    <div class="keyboard-num4 num" value="2">
+                        2
+                    </div>
+                    <div class="keyboard-num4 num" value="3">
+                        3
+                    </div>
+                    <div class="keyboard-switch pay-switch">
+                        <select name="select-native-2" id="select-native-2" data-mini="true" class="pay" data-icon="false">
+                            <option value="1" selected="selected">其他</option>
+                            <option value="2">早饭</option>
+                            <option value="3">午饭</option>
+                            <option value="4">晚饭</option>
+                            <option value="5">零食</option>
+                            <option value="6">交通</option>
+                            <option value="7">加油</option>
+                            <option value="8">购物</option>
+                            <option value="9">学习</option>
+                            <option value="15">社交</option>
+                            <option value="10">借钱</option>
+                            <option value="11">旅行</option>
+                            <option value="12">房租</option>
+                            <option value="13">水电煤</option>
+                            <option value="14">投资</option>
+                        </select>
+                    </div>
+                    <div class="keyboard-switch gain-switch">
+                        <select name="select-native-2" id="select-native-2" data-mini="true" class="gain" data-icon="false">
+                            <option value="2" selected="selected">工资</option>
+                            <option value="3">还款</option>
+                            <option value="4">彩票</option>
+                            <option value="5">投资收益</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="line-row">
+                    <div class="keyboard-num4 num" value="4">
+                        4
+                    </div>
+                    <div class="keyboard-num4 num" value="5">
+                        5
+                    </div>
+                    <div class="keyboard-num4 num" value="6">
+                        6
+                    </div>
+                    <div class="keyboard-switch">
+                        <select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true" class="switch" onchange="changeSwitch();">
+                            <option value="gain" class="switchOnchange">收入</option>
+                            <option value="pay" selected="">支出</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+
+                <div class="line-75">
+                    <div class="line-row">
+
+                        <div class="keyboard-num3 num" value="7">
+                            7
+                        </div>
+                        <div class="keyboard-num3 num" value="8">
+                            8
+                        </div>
+                        <div class="keyboard-num3 num" value="9">
+                            9
+                        </div>
+                    </div>
+
+                    <div class="line-row">
+                        <div class="keyboard-num3 num" value=".">
+                            .
+                        </div>
+                        <div class="keyboard-num3 num" value="0">
+                            0
+                        </div>
+                        <div class="keyboard-remove remove">
+                            删除
+                        </div>
+                    </div>
+                </div>
+                <div class="line-25">
+                    <div class="keyboard-fun submit blue">
+                        确定
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

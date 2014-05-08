@@ -1,0 +1,77 @@
+.black {
+    color: #000;
+}
+body {
+    -webkit-user-select: none;
+}
+.white {
+    color: #555;
+}
+.gray {
+    color: #e5e5e5;
+}
+.blue {
+    color: #fff;
+    font-weight: bold;
+    font-family: serif;
+    background-color:#2a89ce;
+}
+.title-font {
+    font-family: sans-serif;
+}
+.title2-font {
+    font-family: serif;
+    font-size: 13px;
+    color:#fff;
+    position: relative;
+    left: 33px;
+    bottom: 33px;
+}
+.title3-font {
+    font-family: serif;
+    font-size: 13px;
+    color:#BDBDBD;
+    position: relative;
+    left: 33px;
+}
+.content-font {
+    font-family: sans-serif;
+    font-size: 30px;
+    color:#F5001D;
+    margin-right: 80px;
+    position: relative;
+    top: 10px;
+    left: 33px;
+}
+.real-font {
+    font-family: sans-serif;
+    font-size: 15px;
+    color:#F5001D;
+}
+.today-more {
+    height: 150px;
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+th{
+    width: 33.3%;
+}
+td{
+    text-align: center;
+}
+.date-picker{
+    width: 35%;
+}
+#aWeek,#aMonth {
+    height: 150px;
+    width:100%;
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+.footer {
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+}
